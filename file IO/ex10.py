@@ -1,0 +1,13 @@
+#11. Write a Python program to get the file size of a plain file.
+import os
+
+print os.stat("C:\case_test.txt").st_size
+
+print "=========="
+
+def file_size(fname):
+        import os
+        statinfo = os.stat(fname)
+        return statinfo.st_size
+
+print("File size in bytes of a plain file: ",file_size("C:\case_test.txt"))
